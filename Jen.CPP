@@ -1,6 +1,3 @@
-//Computer Investigatory Project 2016-17
-//Coded by Kalpan Mukherjee & Shashank KV
-
 //Header files below
 #include<fstream.h>
 #include<stdio.h>
@@ -19,12 +16,11 @@ void display_start();
 void tim();
 void exp();
 void die();
-//int test_var=0;
 
 void main()
 {
     clrscr();
-     int gd=DETECT,gm,errorcode;
+     int gd=DETECT,gm,errorcode; //initialising the color graph
     initgraph ( &gd, &gm, "c:\\TURBOC3\\BGI" );
 
     display_start(); // displays the start-screen
@@ -37,8 +33,8 @@ void jen()
 {
 	clrscr();
     cleardevice();
-    setbkcolor(MAGENTA);
-    textcolor(0);
+    setbkcolor(MAGENTA); //sets the background colour
+    textcolor(0);  //text colour is set to white(0)
     char usr_inp[1000];
     cout<<"YOU:";
     gets(usr_inp);  //your first input
